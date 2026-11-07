@@ -2,6 +2,8 @@
 
 A local-first Codex plugin for routing work from a manager chat to persistent project chats and bringing their replies back over a local MCP bridge.
 
+本地优先的 Codex 插件，可通过本地 MCP 桥接器在管理对话与持久项目对话之间分派任务，并将回复带回。
+
 The MCP bridge is based on [`dazman-codex/codex-threads-mcp`](https://github.com/dazman-codex/codex-threads-mcp), which provides localhost peer discovery and wakes bound Codex threads with `codex exec resume`. Its upstream MIT license is included. The `project-concierge` skill adds manager routing behavior.
 
 ## Current scope
