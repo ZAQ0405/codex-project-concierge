@@ -16,7 +16,15 @@ This is a local desktop plugin. Bun and the Codex CLI are required to run the in
 ## Install
 
 1. Install Bun and the Codex desktop app with its CLI.
-2. Clone this repository, then run `powershell -ExecutionPolicy Bypass -File .\install.ps1` from the repository root. The installer restores the locked dependencies, registers this repository as a local marketplace, and installs the plugin with its bundled MCP server.
+2. Clone this repository and run the installer from its root:
+
+   ```powershell
+   git clone https://github.com/ZAQ0405/codex-project-concierge.git
+   cd codex-project-concierge
+   powershell -ExecutionPolicy Bypass -File .\install.ps1
+   ```
+
+   The installer restores the locked dependencies, registers this repository as a local marketplace, and installs the plugin with its bundled MCP server.
 3. The installer stops any older Concierge broker and bridge processes so they cannot keep running stale code. Restart Codex and start a new local conversation. The tools (`list_peers`, `send_message`, `bind_thread`, `set_summary`, and `check_messages`) should be available.
 4. For existing project conversations, open the conversation with the plugin enabled, use `bind_thread` once with its verified Codex thread ID, and set a stable `PROJECT: ...` summary plus the verified workspace `cwd` and `git_root`. Bind the manager conversation too if it needs to receive automatic replies.
 
