@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "codex-project-concierge": {
+      "type": "stdio",
+      "command": "powershell.exe",
+      "args": ["-NoProfile", "-NonInteractive", "-File", "${PLUGIN_ROOT}/scripts/start-server.ps1"],
+      "env": { "CODEX_THREADS_AUTOSTART_BRIDGE": "1" }
+    }
+  }
+}

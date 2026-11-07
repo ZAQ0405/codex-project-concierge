@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codex-project-concierge",
+  "version": "0.1.3",
+  "description": "One Codex manager conversation routes work to persistent project conversations and brings replies back.",
+  "extensions": {
+    "com.openai": {
+      "displayName": "Codex Project Concierge"
+    }
+  }
+}
